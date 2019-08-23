@@ -190,6 +190,7 @@ copy = function (element) {
 Back = function () {
     $("#userdetail").hide();
     $('#userlist').show();
+    $("#loadmore").show();
 };
 
 Loadmore = function () {
