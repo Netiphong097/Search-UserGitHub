@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Search</title>
+</head>
+
+<body>
+    <br>
+
+    <div class="container">
+        <div>
+            <h1>Search user on GitHub</h1>
+            <p>Web application search user on GitHub and copy the clone URL or download file in repository.</p>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+
+                <i class="glyphicon glyphicon-search form__icon"></i>
+                <input type="text" name="search" class="form__input" id="input_username" placeholder="      Search">
+
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-primary btn-block btn-lg btn-sub" onclick="Search()">
+                    <i class="glyphicon glyphicon-search"></i>
+                    Search
+                </button>
+            </div>
+        </div>
+
+
+        <!-- //////////////////////////////////////////////////////////   Search   ///////////////////////////////////////////////////////////////////////////////// -->
+        <h4 id="total"></h4>
+        <div class="row">
+            <div id="userlist"></div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-9">
+                <div id="userdetail" style="display: none;">
+                    <button class="btn " onclick="Back()">
+                        <h3><i class="glyphicon glyphicon-chevron-left"></i> Back</h3>
+                    </button>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="profile"><img id="avartar" src="" alt=""></div>
+                                </div>
+                                <div class="col-md-6 name">
+                                    <b id="username"></b>
+                                    <span id="name"></span><br>
+                                    <p id="bio"></p>
+                                    <h4><i class="glyphicon glyphicon-map-marker"></i>
+                                        <span id="location"></span>
+                                    </h4>
+                                    <h4><i class="glyphicon glyphicon-envelope"></i> <span id="email"></span></h4>
+                                    <button type="button" class="btn btn-default">followers <span id="followers"></span>
+                                    </button>
+                                    <button type="button" class="btn btn-default">following <span id="following"></span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br>
+                    <h3><b>Repositories</b></h3>
+                    <!-- //////////       Repositories      //////////// -->
+                    <div id="repos"></div>
+                    <!-- //////////     end  Repositories      //////////// -->
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="text-center">
+            <button class="btn btn-default btn-lg" id="loadmore" onclick="Loadmore()" style="display: none;">
+                Load more..
+            </button>
+        </div>
+    </div>
+    <br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js\app.js"></script>
+</body>
+
+</html>

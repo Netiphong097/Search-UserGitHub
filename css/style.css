@@ -1,0 +1,94 @@
+body{
+	background-color: #dfdfdf;
+	font-family: 'Rubik', sans-serif;
+}
+.card {
+	background-color: #fff;
+	border: solid 1px;
+	border-color: #e3e3e3;
+	border-radius: 5px;
+	padding: 0px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+	padding: 15px;
+	font-size: 16px;
+	overflow: hidden;
+}
+
+.card-head {
+	font-style: bold;
+	margin-bottom: 10px;
+}
+.profile {
+	margin: 0 auto;
+}
+.profile img{
+	width:180px;
+	margin: 0 auto;
+	border-radius: 3px;
+}
+.profile2 img{
+	width:70px;
+	height:70px;
+	margin: 0 auto;
+	border-radius: 3px;
+}
+.name b {
+	font-size: 40px;
+}
+
+.form__icon {
+	position: absolute;
+	pointer-events: none;
+	z-index: 2;
+}
+.form__input {
+	position: relative;
+	z-index: 3;
+	margin-bottom: 5px;
+}
+.form__input:placeholder-shown {
+	z-index: 1;
+}
+
+.form__icon {
+	margin: 20px 0 0 24px;
+	font-size: 20px;
+	color: #7e7985;
+}
+.form__input {
+	height: 60px;
+	width: 100%;
+	padding-left: 20px;
+	border: none;
+	border-radius: 5px;
+	background: white;
+	outline: none;
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+	font-size: 20px;
+}
+  
+.form__input::placeholder {
+	font-size: 20px;
+	color: #7e7985;
+	font-family: 'Roboto Slab', serif;
+}
+.btn-sub{
+height: 60px;
+}
+.repos-text{
+	color: #7e7985;
+}
+.name_user{
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+.list:hover{
+	background-color: #b6b6b6;
+	cursor: pointer;
+}
