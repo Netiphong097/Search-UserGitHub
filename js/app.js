@@ -152,7 +152,7 @@ ShowRepos = function (reposdata) {
                                         <div class="col-lg-3">Clone url</div>\
                                         <div class="col-lg-9">\
                                             <div class="input-group">\
-                                                <input type="text" class="form-control" id="'+ value.id + '" value="' + value.html_url + '">\
+                                                <input type="text" class="form-control" id="'+ value.id + '" value="' + value.clone_url + '">\
                                                     <span class="input-group-btn">\
                                                         <button class="btn btn-default" onclick="copy('+ value.id + ')" type="button"><i class="glyphicon glyphicon-duplicate"></i></button>\
                                                     </span>\
